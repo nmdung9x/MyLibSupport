@@ -8,6 +8,7 @@
 
 #import "NSDictionary+Utils.h"
 #import "NSString+Utils.h"
+#import "LogUtils.h"
 
 @implementation NSDictionary (Utils)
 

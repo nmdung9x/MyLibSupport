@@ -8,6 +8,7 @@
 
 #import "NSString+Utils.h"
 #import "UIColor+Hex.h"
+#import "LogUtils.h"
 
 @implementation NSString (Utils)
 

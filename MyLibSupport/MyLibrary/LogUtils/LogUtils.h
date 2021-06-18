@@ -33,6 +33,8 @@
 }
 @property NSTimer *timerMemory;
 + (LogUtils *) shareInstance;
++ (void) setAppStage:(int) stage;
++ (void) setDebugScreen:(int) mode;
 + (void) logLine:(int)line
         function:(NSString *)function
          content:(NSString *)content;

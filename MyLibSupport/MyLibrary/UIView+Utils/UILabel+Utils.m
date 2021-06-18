@@ -7,6 +7,8 @@
 
 #import "UILabel+Utils.h"
 
+#import "UIView+Utils.h"
+
 @implementation UILabel (Utils)
 
 - (CGFloat) getTextWidth;

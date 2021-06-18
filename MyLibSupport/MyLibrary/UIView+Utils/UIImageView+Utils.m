@@ -5,6 +5,7 @@
 //
 
 #import "UIImageView+Utils.h"
+#import "UIView+Utils.h"
 
 @implementation UIImageView (Utils)
 

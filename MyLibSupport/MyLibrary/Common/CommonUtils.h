@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CommonUtils : NSObject
 
 + (void)delay:(NSInteger)miliSec block:(void (^)(void))completeBlock;
-+ (void)delay:(NSInteger)miliSec tag:(NSString *)tag block:(void(^)(NSString *tag)) block
++ (void)delay:(NSInteger)miliSec tag:(NSString *)tag block:(void(^)(NSString *tag)) block;
 
 @end
 

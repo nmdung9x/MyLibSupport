@@ -10,6 +10,7 @@
 #import <mach/mach.h>
 #import <UIKit/UIKit.h>
 #import "NSDate+Utils.h"
+#import "NSArray+Utils.h"
 //#import "CrashManager.h"
 
 #define buttonDebugY 20
@@ -35,6 +36,7 @@ static id _shareInstance = nil;
 static int DEBUG_MODE = 1;
 static int DEBUG_SCREEN = 0; // 1 = show on screen, 2 = log into file, 3 = both
 static int DEBUG_MEMORY = 0;
+static int app_stage = 1;
 
 + (LogUtils *) shareInstance;
 {
@@ -42,6 +44,16 @@ static int DEBUG_MEMORY = 0;
         _shareInstance = [[LogUtils alloc] init];
     }
     return _shareInstance;
+}
+
++ (void) setAppStage:(int) stage;
+{
+    app_stage = stage;
+}
+
++ (void) setDebugScreen:(int) mode;
+{
+    DEBUG_SCREEN = mode;
 }
 
 - (instancetype)init

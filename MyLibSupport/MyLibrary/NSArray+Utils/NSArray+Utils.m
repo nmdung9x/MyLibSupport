@@ -7,6 +7,8 @@
 //
 
 #import "NSArray+Utils.h"
+#import "LogUtils.h"
+#import "NSString+Utils.h"
 
 @implementation NSArray (Utils)
 
