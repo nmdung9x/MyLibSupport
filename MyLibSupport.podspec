@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MyLibSupport"
-  spec.version      = "1.0"
+  spec.version      = "1.0.0"
   spec.summary      = "MyLibSupport."
 
   # This description is used to generate tags and improve search results.
@@ -25,9 +25,10 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+  My Library Support
                    DESC
 
-  spec.homepage     = ""
+  spec.homepage     = "https://github.com/nmdung9x"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
