@@ -4,7 +4,8 @@
 #
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
 #  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
-#
+
+#  pod trunk push --verbose --allow-warnings
 
 Pod::Spec.new do |spec|
 
