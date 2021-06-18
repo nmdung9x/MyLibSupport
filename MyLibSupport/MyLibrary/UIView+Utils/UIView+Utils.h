@@ -171,4 +171,6 @@
 - (UILabel *) addLabelView:(NSString *)text fontLabel:(UIFont *)font paddingTop:(CGFloat)top paddingLR:(CGFloat)padding;
 - (void) animationScale:(void (^)(void))completeBlock;
 - (void) animationScale:(CGFloat)scale completion:(void (^)(void))completeBlock;
+- (void) addShadowForView;
+- (void) addShadowBottomForView;
 @end

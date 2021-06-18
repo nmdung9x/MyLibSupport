@@ -48,6 +48,44 @@
 		C374E4D4267C54430035DB08 /* DateTimePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = C374E4AC267C54430035DB08 /* DateTimePickerView.h */; };
 		C374E4D9267C57290035DB08 /* CommonUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = C374E4D7267C57290035DB08 /* CommonUtils.h */; };
 		C374E4DA267C57290035DB08 /* CommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C374E4D8267C57290035DB08 /* CommonUtils.m */; };
+		C374E4F6267C75E40035DB08 /* MZFormSheetPresentationViewControllerAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C374E4DC267C75E40035DB08 /* MZFormSheetPresentationViewControllerAnimator.m */; };
+		C374E4F7267C75E40035DB08 /* MZFormSheetPresentationViewControllerSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = C374E4DD267C75E40035DB08 /* MZFormSheetPresentationViewControllerSegue.h */; };
+		C374E4F8267C75E40035DB08 /* MZFormSheetPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = C374E4DE267C75E40035DB08 /* MZFormSheetPresentationController.h */; };
+		C374E4F9267C75E40035DB08 /* MZFormSheetPresentationViewControllerInteractiveAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C374E4DF267C75E40035DB08 /* MZFormSheetPresentationViewControllerInteractiveAnimator.m */; };
+		C374E4FA267C75E40035DB08 /* MZFormSheetContentSizingNavigationControllerAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C374E4E0267C75E40035DB08 /* MZFormSheetContentSizingNavigationControllerAnimator.m */; };
+		C374E4FB267C75E40035DB08 /* MZFormSheetPresentationViewControllerInteractiveTransitioning.h in Headers */ = {isa = PBXBuildFile; fileRef = C374E4E1267C75E40035DB08 /* MZFormSheetPresentationViewControllerInteractiveTransitioning.h */; };
+		C374E4FC267C75E40035DB08 /* MZBlurEffectAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = C374E4E2267C75E40035DB08 /* MZBlurEffectAdapter.h */; };
+		C374E4FD267C75E40035DB08 /* MZTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = C374E4E3267C75E40035DB08 /* MZTransition.h */; };
+		C374E4FE267C75E40035DB08 /* MZMethodSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = C374E4E4267C75E40035DB08 /* MZMethodSwizzler.m */; };
+		C374E4FF267C75E40035DB08 /* MZFormSheetPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C374E4E5267C75E40035DB08 /* MZFormSheetPresentationViewController.m */; };
+		C374E500267C75E40035DB08 /* MZFormSheetPresentationContentSizing.h in Headers */ = {isa = PBXBuildFile; fileRef = C374E4E6267C75E40035DB08 /* MZFormSheetPresentationContentSizing.h */; };
+		C374E501267C75E40035DB08 /* UIViewController+TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C374E4E7267C75E40035DB08 /* UIViewController+TargetViewController.m */; };
+		C374E502267C75E40035DB08 /* MZFormSheetContentSizingNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = C374E4E8267C75E40035DB08 /* MZFormSheetContentSizingNavigationController.h */; };
+		C374E503267C75E40035DB08 /* MZFormSheetPresentationController Swift Example-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = C374E4E9267C75E40035DB08 /* MZFormSheetPresentationController Swift Example-Bridging-Header.h */; };
+		C374E504267C75E40035DB08 /* MZFormSheetPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C374E4EA267C75E40035DB08 /* MZFormSheetPresentationController.m */; };
+		C374E505267C75E40035DB08 /* MZFormSheetPresentationViewControllerSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = C374E4EB267C75E40035DB08 /* MZFormSheetPresentationViewControllerSegue.m */; };
+		C374E506267C75E40035DB08 /* MZFormSheetPresentationViewControllerAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = C374E4EC267C75E40035DB08 /* MZFormSheetPresentationViewControllerAnimator.h */; };
+		C374E507267C75E40035DB08 /* MZFormSheetPresentationViewControllerAnimatedTransitioning.h in Headers */ = {isa = PBXBuildFile; fileRef = C374E4ED267C75E40035DB08 /* MZFormSheetPresentationViewControllerAnimatedTransitioning.h */; };
+		C374E508267C75E40035DB08 /* MZTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C374E4EE267C75E40035DB08 /* MZTransition.m */; };
+		C374E509267C75E40035DB08 /* MZBlurEffectAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C374E4EF267C75E40035DB08 /* MZBlurEffectAdapter.m */; };
+		C374E50A267C75E40035DB08 /* MZFormSheetContentSizingNavigationControllerAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = C374E4F0267C75E40035DB08 /* MZFormSheetContentSizingNavigationControllerAnimator.h */; };
+		C374E50B267C75E40035DB08 /* MZFormSheetPresentationViewControllerInteractiveAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = C374E4F1267C75E40035DB08 /* MZFormSheetPresentationViewControllerInteractiveAnimator.h */; };
+		C374E50C267C75E40035DB08 /* MZFormSheetContentSizingNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C374E4F2267C75E40035DB08 /* MZFormSheetContentSizingNavigationController.m */; };
+		C374E50D267C75E40035DB08 /* UIViewController+TargetViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C374E4F3267C75E40035DB08 /* UIViewController+TargetViewController.h */; };
+		C374E50E267C75E40035DB08 /* MZFormSheetPresentationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C374E4F4267C75E40035DB08 /* MZFormSheetPresentationViewController.h */; };
+		C374E50F267C75E40035DB08 /* MZMethodSwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = C374E4F5267C75E40035DB08 /* MZMethodSwizzler.h */; };
+		C374E514267C761E0035DB08 /* NSInvocation+Copy.h in Headers */ = {isa = PBXBuildFile; fileRef = C374E510267C761E0035DB08 /* NSInvocation+Copy.h */; };
+		C374E515267C761E0035DB08 /* MZAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = C374E511267C761E0035DB08 /* MZAppearance.h */; };
+		C374E516267C761E0035DB08 /* MZAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = C374E512267C761E0035DB08 /* MZAppearance.m */; };
+		C374E517267C761E0035DB08 /* NSInvocation+Copy.m in Sources */ = {isa = PBXBuildFile; fileRef = C374E513267C761E0035DB08 /* NSInvocation+Copy.m */; };
+		C374E51B267C76D40035DB08 /* PopupCustomViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C374E519267C76D40035DB08 /* PopupCustomViewController.h */; };
+		C374E51C267C76D40035DB08 /* PopupCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C374E51A267C76D40035DB08 /* PopupCustomViewController.m */; };
+		C374E520267C78050035DB08 /* UIViewController+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = C374E51E267C78050035DB08 /* UIViewController+Utils.h */; };
+		C374E521267C78050035DB08 /* UIViewController+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = C374E51F267C78050035DB08 /* UIViewController+Utils.m */; };
+		C374E524267C7A570035DB08 /* LocationUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C374E522267C7A570035DB08 /* LocationUtils.m */; };
+		C374E525267C7A570035DB08 /* LocationUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = C374E523267C7A570035DB08 /* LocationUtils.h */; };
+		C374E528267C7D380035DB08 /* UIImage+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = C374E526267C7D380035DB08 /* UIImage+Utils.h */; };
+		C374E529267C7D380035DB08 /* UIImage+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = C374E527267C7D380035DB08 /* UIImage+Utils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +132,44 @@
 		C374E4AC267C54430035DB08 /* DateTimePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimePickerView.h; sourceTree = "<group>"; };
 		C374E4D7267C57290035DB08 /* CommonUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonUtils.h; sourceTree = "<group>"; };
 		C374E4D8267C57290035DB08 /* CommonUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonUtils.m; sourceTree = "<group>"; };
+		C374E4DC267C75E40035DB08 /* MZFormSheetPresentationViewControllerAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFormSheetPresentationViewControllerAnimator.m; sourceTree = "<group>"; };
+		C374E4DD267C75E40035DB08 /* MZFormSheetPresentationViewControllerSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetPresentationViewControllerSegue.h; sourceTree = "<group>"; };
+		C374E4DE267C75E40035DB08 /* MZFormSheetPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetPresentationController.h; sourceTree = "<group>"; };
+		C374E4DF267C75E40035DB08 /* MZFormSheetPresentationViewControllerInteractiveAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFormSheetPresentationViewControllerInteractiveAnimator.m; sourceTree = "<group>"; };
+		C374E4E0267C75E40035DB08 /* MZFormSheetContentSizingNavigationControllerAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFormSheetContentSizingNavigationControllerAnimator.m; sourceTree = "<group>"; };
+		C374E4E1267C75E40035DB08 /* MZFormSheetPresentationViewControllerInteractiveTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetPresentationViewControllerInteractiveTransitioning.h; sourceTree = "<group>"; };
+		C374E4E2267C75E40035DB08 /* MZBlurEffectAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZBlurEffectAdapter.h; sourceTree = "<group>"; };
+		C374E4E3267C75E40035DB08 /* MZTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTransition.h; sourceTree = "<group>"; };
+		C374E4E4267C75E40035DB08 /* MZMethodSwizzler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZMethodSwizzler.m; sourceTree = "<group>"; };
+		C374E4E5267C75E40035DB08 /* MZFormSheetPresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFormSheetPresentationViewController.m; sourceTree = "<group>"; };
+		C374E4E6267C75E40035DB08 /* MZFormSheetPresentationContentSizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetPresentationContentSizing.h; sourceTree = "<group>"; };
+		C374E4E7267C75E40035DB08 /* UIViewController+TargetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TargetViewController.m"; sourceTree = "<group>"; };
+		C374E4E8267C75E40035DB08 /* MZFormSheetContentSizingNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetContentSizingNavigationController.h; sourceTree = "<group>"; };
+		C374E4E9267C75E40035DB08 /* MZFormSheetPresentationController Swift Example-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MZFormSheetPresentationController Swift Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		C374E4EA267C75E40035DB08 /* MZFormSheetPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFormSheetPresentationController.m; sourceTree = "<group>"; };
+		C374E4EB267C75E40035DB08 /* MZFormSheetPresentationViewControllerSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFormSheetPresentationViewControllerSegue.m; sourceTree = "<group>"; };
+		C374E4EC267C75E40035DB08 /* MZFormSheetPresentationViewControllerAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetPresentationViewControllerAnimator.h; sourceTree = "<group>"; };
+		C374E4ED267C75E40035DB08 /* MZFormSheetPresentationViewControllerAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetPresentationViewControllerAnimatedTransitioning.h; sourceTree = "<group>"; };
+		C374E4EE267C75E40035DB08 /* MZTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTransition.m; sourceTree = "<group>"; };
+		C374E4EF267C75E40035DB08 /* MZBlurEffectAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZBlurEffectAdapter.m; sourceTree = "<group>"; };
+		C374E4F0267C75E40035DB08 /* MZFormSheetContentSizingNavigationControllerAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetContentSizingNavigationControllerAnimator.h; sourceTree = "<group>"; };
+		C374E4F1267C75E40035DB08 /* MZFormSheetPresentationViewControllerInteractiveAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetPresentationViewControllerInteractiveAnimator.h; sourceTree = "<group>"; };
+		C374E4F2267C75E40035DB08 /* MZFormSheetContentSizingNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFormSheetContentSizingNavigationController.m; sourceTree = "<group>"; };
+		C374E4F3267C75E40035DB08 /* UIViewController+TargetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TargetViewController.h"; sourceTree = "<group>"; };
+		C374E4F4267C75E40035DB08 /* MZFormSheetPresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetPresentationViewController.h; sourceTree = "<group>"; };
+		C374E4F5267C75E40035DB08 /* MZMethodSwizzler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZMethodSwizzler.h; sourceTree = "<group>"; };
+		C374E510267C761E0035DB08 /* NSInvocation+Copy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+Copy.h"; sourceTree = "<group>"; };
+		C374E511267C761E0035DB08 /* MZAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZAppearance.h; sourceTree = "<group>"; };
+		C374E512267C761E0035DB08 /* MZAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZAppearance.m; sourceTree = "<group>"; };
+		C374E513267C761E0035DB08 /* NSInvocation+Copy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+Copy.m"; sourceTree = "<group>"; };
+		C374E519267C76D40035DB08 /* PopupCustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupCustomViewController.h; sourceTree = "<group>"; };
+		C374E51A267C76D40035DB08 /* PopupCustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupCustomViewController.m; sourceTree = "<group>"; };
+		C374E51E267C78050035DB08 /* UIViewController+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utils.h"; sourceTree = "<group>"; };
+		C374E51F267C78050035DB08 /* UIViewController+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utils.m"; sourceTree = "<group>"; };
+		C374E522267C7A570035DB08 /* LocationUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationUtils.m; sourceTree = "<group>"; };
+		C374E523267C7A570035DB08 /* LocationUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationUtils.h; sourceTree = "<group>"; };
+		C374E526267C7D380035DB08 /* UIImage+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utils.h"; sourceTree = "<group>"; };
+		C374E527267C7D380035DB08 /* UIImage+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utils.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,12 +219,14 @@
 				C374E486267C54430035DB08 /* KSToastView */,
 				C374E4A1267C54430035DB08 /* LogUtils */,
 				C374E49E267C54430035DB08 /* MarqueeLabel */,
+				C374E4DB267C75E40035DB08 /* MZFormSheetPresentationController */,
 				C374E496267C54430035DB08 /* NSArray+Utils */,
 				C374E493267C54430035DB08 /* NSDictionary+Utils */,
 				C374E490267C54430035DB08 /* NSString+Utils */,
 				C374E47A267C54430035DB08 /* UIColor+Hex */,
-				C374E4A4267C54430035DB08 /* UIImage+Color */,
+				C374E4A4267C54430035DB08 /* UIImage+Utils */,
 				C374E489267C54430035DB08 /* UIView+Utils */,
+				C374E51D267C77F50035DB08 /* UIViewController+Utils */,
 			);
 			path = MyLibrary;
 			sourceTree = "<group>";
@@ -255,18 +333,21 @@
 			path = LogUtils;
 			sourceTree = "<group>";
 		};
-		C374E4A4267C54430035DB08 /* UIImage+Color */ = {
+		C374E4A4267C54430035DB08 /* UIImage+Utils */ = {
 			isa = PBXGroup;
 			children = (
 				C374E4A5267C54430035DB08 /* UIImage+Color.h */,
 				C374E4A6267C54430035DB08 /* UIImage+Color.m */,
+				C374E526267C7D380035DB08 /* UIImage+Utils.h */,
+				C374E527267C7D380035DB08 /* UIImage+Utils.m */,
 			);
-			path = "UIImage+Color";
+			path = "UIImage+Utils";
 			sourceTree = "<group>";
 		};
 		C374E4A7267C54430035DB08 /* MyCustomView */ = {
 			isa = PBXGroup;
 			children = (
+				C374E518267C76D40035DB08 /* PopupVCs */,
 				C374E4AC267C54430035DB08 /* DateTimePickerView.h */,
 				C374E4A9267C54430035DB08 /* DateTimePickerView.m */,
 				C374E4A8267C54430035DB08 /* ViewPDFViewer.h */,
@@ -280,8 +361,65 @@
 			children = (
 				C374E4D7267C57290035DB08 /* CommonUtils.h */,
 				C374E4D8267C57290035DB08 /* CommonUtils.m */,
+				C374E523267C7A570035DB08 /* LocationUtils.h */,
+				C374E522267C7A570035DB08 /* LocationUtils.m */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		C374E4DB267C75E40035DB08 /* MZFormSheetPresentationController */ = {
+			isa = PBXGroup;
+			children = (
+				C374E511267C761E0035DB08 /* MZAppearance.h */,
+				C374E512267C761E0035DB08 /* MZAppearance.m */,
+				C374E4E2267C75E40035DB08 /* MZBlurEffectAdapter.h */,
+				C374E4EF267C75E40035DB08 /* MZBlurEffectAdapter.m */,
+				C374E4E8267C75E40035DB08 /* MZFormSheetContentSizingNavigationController.h */,
+				C374E4F2267C75E40035DB08 /* MZFormSheetContentSizingNavigationController.m */,
+				C374E4F0267C75E40035DB08 /* MZFormSheetContentSizingNavigationControllerAnimator.h */,
+				C374E4E0267C75E40035DB08 /* MZFormSheetContentSizingNavigationControllerAnimator.m */,
+				C374E4E6267C75E40035DB08 /* MZFormSheetPresentationContentSizing.h */,
+				C374E4E9267C75E40035DB08 /* MZFormSheetPresentationController Swift Example-Bridging-Header.h */,
+				C374E4DE267C75E40035DB08 /* MZFormSheetPresentationController.h */,
+				C374E4EA267C75E40035DB08 /* MZFormSheetPresentationController.m */,
+				C374E4F4267C75E40035DB08 /* MZFormSheetPresentationViewController.h */,
+				C374E4E5267C75E40035DB08 /* MZFormSheetPresentationViewController.m */,
+				C374E4ED267C75E40035DB08 /* MZFormSheetPresentationViewControllerAnimatedTransitioning.h */,
+				C374E4EC267C75E40035DB08 /* MZFormSheetPresentationViewControllerAnimator.h */,
+				C374E4DC267C75E40035DB08 /* MZFormSheetPresentationViewControllerAnimator.m */,
+				C374E4F1267C75E40035DB08 /* MZFormSheetPresentationViewControllerInteractiveAnimator.h */,
+				C374E4DF267C75E40035DB08 /* MZFormSheetPresentationViewControllerInteractiveAnimator.m */,
+				C374E4E1267C75E40035DB08 /* MZFormSheetPresentationViewControllerInteractiveTransitioning.h */,
+				C374E4DD267C75E40035DB08 /* MZFormSheetPresentationViewControllerSegue.h */,
+				C374E4EB267C75E40035DB08 /* MZFormSheetPresentationViewControllerSegue.m */,
+				C374E4F5267C75E40035DB08 /* MZMethodSwizzler.h */,
+				C374E4E4267C75E40035DB08 /* MZMethodSwizzler.m */,
+				C374E4E3267C75E40035DB08 /* MZTransition.h */,
+				C374E4EE267C75E40035DB08 /* MZTransition.m */,
+				C374E510267C761E0035DB08 /* NSInvocation+Copy.h */,
+				C374E513267C761E0035DB08 /* NSInvocation+Copy.m */,
+				C374E4F3267C75E40035DB08 /* UIViewController+TargetViewController.h */,
+				C374E4E7267C75E40035DB08 /* UIViewController+TargetViewController.m */,
+			);
+			path = MZFormSheetPresentationController;
+			sourceTree = "<group>";
+		};
+		C374E518267C76D40035DB08 /* PopupVCs */ = {
+			isa = PBXGroup;
+			children = (
+				C374E519267C76D40035DB08 /* PopupCustomViewController.h */,
+				C374E51A267C76D40035DB08 /* PopupCustomViewController.m */,
+			);
+			path = PopupVCs;
+			sourceTree = "<group>";
+		};
+		C374E51D267C77F50035DB08 /* UIViewController+Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C374E51E267C78050035DB08 /* UIViewController+Utils.h */,
+				C374E51F267C78050035DB08 /* UIViewController+Utils.m */,
+			);
+			path = "UIViewController+Utils";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,27 +429,48 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C374E528267C7D380035DB08 /* UIImage+Utils.h in Headers */,
 				C374E4C5267C54430035DB08 /* NSArray+Utils.h in Headers */,
+				C374E525267C7A570035DB08 /* LocationUtils.h in Headers */,
+				C374E514267C761E0035DB08 /* NSInvocation+Copy.h in Headers */,
 				C374E4B2267C54430035DB08 /* DTConstants.h in Headers */,
+				C374E50F267C75E40035DB08 /* MZMethodSwizzler.h in Headers */,
 				C374E4BD267C54430035DB08 /* UIView+Utils.h in Headers */,
+				C374E506267C75E40035DB08 /* MZFormSheetPresentationViewControllerAnimator.h in Headers */,
 				C374E4B0267C54430035DB08 /* DTError.h in Headers */,
+				C374E500267C75E40035DB08 /* MZFormSheetPresentationContentSizing.h in Headers */,
+				C374E4FC267C75E40035DB08 /* MZBlurEffectAdapter.h in Headers */,
 				C374E4CB267C54430035DB08 /* MarqueeLabel.h in Headers */,
 				C374E4BE267C54430035DB08 /* UIImageView+Utils.h in Headers */,
 				C374E4CE267C54430035DB08 /* UIImage+Color.h in Headers */,
 				C374E4D9267C57290035DB08 /* CommonUtils.h in Headers */,
 				C374E4AF267C54430035DB08 /* UIColor+Hex.h in Headers */,
+				C374E502267C75E40035DB08 /* MZFormSheetContentSizingNavigationController.h in Headers */,
 				C374E4D4267C54430035DB08 /* DateTimePickerView.h in Headers */,
 				C374E4B8267C54430035DB08 /* KSToastView.h in Headers */,
+				C374E50E267C75E40035DB08 /* MZFormSheetPresentationViewController.h in Headers */,
 				C374E4B7267C54430035DB08 /* NSDate+DateTools.h in Headers */,
 				C374E4BF267C54430035DB08 /* UILabel+Utils.h in Headers */,
 				C374E473267C53680035DB08 /* MyLibSupport.h in Headers */,
 				C374E4CC267C54430035DB08 /* LogUtils.h in Headers */,
+				C374E4FD267C75E40035DB08 /* MZTransition.h in Headers */,
+				C374E520267C78050035DB08 /* UIViewController+Utils.h in Headers */,
 				C374E4C7267C54430035DB08 /* CustomView.h in Headers */,
+				C374E51B267C76D40035DB08 /* PopupCustomViewController.h in Headers */,
 				C374E4C2267C54430035DB08 /* NSDictionary+Utils.h in Headers */,
 				C374E4D0267C54430035DB08 /* ViewPDFViewer.h in Headers */,
+				C374E4F7267C75E40035DB08 /* MZFormSheetPresentationViewControllerSegue.h in Headers */,
+				C374E4FB267C75E40035DB08 /* MZFormSheetPresentationViewControllerInteractiveTransitioning.h in Headers */,
+				C374E50D267C75E40035DB08 /* UIViewController+TargetViewController.h in Headers */,
+				C374E50B267C75E40035DB08 /* MZFormSheetPresentationViewControllerInteractiveAnimator.h in Headers */,
 				C374E4C0267C54430035DB08 /* NSString+Utils.h in Headers */,
+				C374E515267C761E0035DB08 /* MZAppearance.h in Headers */,
+				C374E4F8267C75E40035DB08 /* MZFormSheetPresentationController.h in Headers */,
 				C374E4B1267C54430035DB08 /* NSDate+Utils.h in Headers */,
+				C374E503267C75E40035DB08 /* MZFormSheetPresentationController Swift Example-Bridging-Header.h in Headers */,
 				C374E4C6267C54430035DB08 /* CustomButton.h in Headers */,
+				C374E50A267C75E40035DB08 /* MZFormSheetContentSizingNavigationControllerAnimator.h in Headers */,
+				C374E507267C75E40035DB08 /* MZFormSheetPresentationViewControllerAnimatedTransitioning.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,26 +541,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C374E516267C761E0035DB08 /* MZAppearance.m in Sources */,
+				C374E4F6267C75E40035DB08 /* MZFormSheetPresentationViewControllerAnimator.m in Sources */,
 				C374E4C3267C54430035DB08 /* NSDictionary+Utils.m in Sources */,
+				C374E521267C78050035DB08 /* UIViewController+Utils.m in Sources */,
+				C374E524267C7A570035DB08 /* LocationUtils.m in Sources */,
 				C374E4BC267C54430035DB08 /* UILabel+Utils.m in Sources */,
 				C374E4B6267C54430035DB08 /* DTError.m in Sources */,
 				C374E4CF267C54430035DB08 /* UIImage+Color.m in Sources */,
+				C374E529267C7D380035DB08 /* UIImage+Utils.m in Sources */,
 				C374E4D3267C54430035DB08 /* ViewPDFViewer.m in Sources */,
+				C374E501267C75E40035DB08 /* UIViewController+TargetViewController.m in Sources */,
 				C374E4BA267C54430035DB08 /* UIView+Utils.m in Sources */,
 				C374E4DA267C57290035DB08 /* CommonUtils.m in Sources */,
 				C374E4B5267C54430035DB08 /* NSDate+Utils.m in Sources */,
+				C374E4F9267C75E40035DB08 /* MZFormSheetPresentationViewControllerInteractiveAnimator.m in Sources */,
+				C374E51C267C76D40035DB08 /* PopupCustomViewController.m in Sources */,
+				C374E4FA267C75E40035DB08 /* MZFormSheetContentSizingNavigationControllerAnimator.m in Sources */,
 				C374E4CA267C54430035DB08 /* MarqueeLabel.m in Sources */,
 				C374E4B3267C54430035DB08 /* NSDate+DateTools.m in Sources */,
 				C374E4C4267C54430035DB08 /* NSArray+Utils.m in Sources */,
 				C374E4CD267C54430035DB08 /* LogUtils.m in Sources */,
+				C374E4FF267C75E40035DB08 /* MZFormSheetPresentationViewController.m in Sources */,
+				C374E4FE267C75E40035DB08 /* MZMethodSwizzler.m in Sources */,
+				C374E508267C75E40035DB08 /* MZTransition.m in Sources */,
 				C374E4AE267C54430035DB08 /* UIColor+Hex.m in Sources */,
+				C374E50C267C75E40035DB08 /* MZFormSheetContentSizingNavigationController.m in Sources */,
 				C374E4B9267C54430035DB08 /* KSToastView.m in Sources */,
+				C374E517267C761E0035DB08 /* NSInvocation+Copy.m in Sources */,
 				C374E4C1267C54430035DB08 /* NSString+Utils.m in Sources */,
 				C374E4BB267C54430035DB08 /* UIImageView+Utils.m in Sources */,
 				C374E4C9267C54430035DB08 /* CustomView.m in Sources */,
+				C374E509267C75E40035DB08 /* MZBlurEffectAdapter.m in Sources */,
 				C374E4D1267C54430035DB08 /* DateTimePickerView.m in Sources */,
 				C374E4C8267C54430035DB08 /* CustomButton.m in Sources */,
 				C374E4B4267C54430035DB08 /* DTConstants.m in Sources */,
+				C374E504267C75E40035DB08 /* MZFormSheetPresentationController.m in Sources */,
+				C374E505267C75E40035DB08 /* MZFormSheetPresentationViewControllerSegue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

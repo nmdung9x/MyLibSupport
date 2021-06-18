@@ -21,7 +21,6 @@ static char kDTActionHandlerLongPressGestureKey;
 
 @implementation UIView (Utils)
 
-
 - (CGFloat)left {
     return self.frame.origin.x;
 }
@@ -576,5 +575,31 @@ static char kDTActionHandlerLongPressGestureKey;
         self.transform = CGAffineTransformMakeScale(1, 1);
         completeBlock();
     }];
+}
+
+- (void) addShadowForView;
+{
+    self.layer.shadowRadius  = self.layer.cornerRadius;
+    self.layer.shadowColor   = [UIColor colorWithHex:0xA8A8A8].CGColor;
+    self.layer.shadowOffset  = CGSizeMake(0.0f, 0.0f);
+    self.layer.shadowOpacity = 0.25f;
+    self.layer.masksToBounds = NO;
+    
+    UIEdgeInsets shadowInsets     = UIEdgeInsetsMake(-1, -1, -1, -1);
+    UIBezierPath *shadowPath      = [UIBezierPath bezierPathWithRect:UIEdgeInsetsInsetRect(self.bounds, shadowInsets)];
+    self.layer.shadowPath    = shadowPath.CGPath;
+}
+
+- (void) addShadowBottomForView;
+{
+    self.layer.shadowRadius  = 1.5f;
+    self.layer.shadowColor   = [UIColor colorWithRed:176.f/255.f green:199.f/255.f blue:226.f/255.f alpha:1.f].CGColor;
+    self.layer.shadowOffset  = CGSizeMake(0.0f, 2);
+    self.layer.shadowOpacity = 0.9f;
+    self.layer.masksToBounds = NO;
+    
+    UIEdgeInsets shadowInsets     = UIEdgeInsetsMake(0, 0, -1, 0);
+    UIBezierPath *shadowPath      = [UIBezierPath bezierPathWithRect:UIEdgeInsetsInsetRect(self.bounds, shadowInsets)];
+    self.layer.shadowPath    = shadowPath.CGPath;
 }
 @end

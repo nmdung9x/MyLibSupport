@@ -28,6 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *) appendingString:(NSString *)text;
 - (NSDictionary *) convertToDictionary;
 - (NSArray *) convertToArrayJson;
+- (NSMutableDictionary *) parseQueryToDictionary;
 - (NSString *) removeAccentsText;
 - (NSString *) parseHTMLString;
 - (UIColor*) colorWithHexString;
@@ -35,9 +36,19 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSDate *) convert:(NSString *) format;
 - (NSDate *) convertUTC:(NSString *) format;
 - (NSString *) encodingUTF8;
+- (void) openWebsite;
+- (UIImage *) decodeBase64ToImage;
+- (NSMutableAttributedString *) stylingAttributedString:(NSString *)text color:(UIColor *)color font:(UIFont *)font;
+- (NSMutableAttributedString *) stylingAttributedString:(NSString *)text
+                                                 color0:(UIColor *)color0
+                                                  font0:(UIFont *)font0
+                                                  color:(UIColor *)color
+                                                   font:(UIFont *)font;
 
 + (BOOL)isNullOrEmpty:(NSString *)s;
 + (NSString *) join:(NSArray *) array regex:(NSString *) regex;
++ (NSString *) randomStringWithLength:(int) len;
++ (NSString *) randomStringWithLength:(NSString *)letters len:(int) len;
 
 @end
 

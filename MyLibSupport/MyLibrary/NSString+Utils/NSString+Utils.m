@@ -9,6 +9,7 @@
 #import "NSString+Utils.h"
 #import "UIColor+Hex.h"
 #import "LogUtils.h"
+#import "NSArray+Utils.h"
 
 @implementation NSString (Utils)
 
@@ -129,6 +130,37 @@
     NSArray *results = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&err];
 
     return err == nil ? (results ? results : [NSArray new]) : [NSArray new];
+}
+
+- (NSMutableDictionary *) parseQueryToDictionary;
+{
+    NSMutableDictionary *result = [NSMutableDictionary new];
+    @try {
+        NSString *tmp = [[self trimWhiteSpace] replaceString:@"?" withString:@""];
+        if (![tmp isEmpty]) {
+            if ([tmp contains:@"&"]) {
+                NSArray *arr = [tmp componentsSeparatedByString:@"&"];
+                for (NSString *item in arr) {
+                    if ([item contains:@"="]) {
+                        NSArray *arr2 = [item componentsSeparatedByString:@"="];
+                        if (arr2.count == 2) {
+                            [result setObject:[arr2 safeObjectAtIndex:1] forKey:[arr2 safeObjectAtIndex:0]];
+                        }
+                    }
+                }
+            } else {
+                if ([tmp contains:@"="]) {
+                    NSArray *arr2 = [tmp componentsSeparatedByString:@"="];
+                    if (arr2.count == 2) {
+                        [result setObject:[arr2 safeObjectAtIndex:1] forKey:[arr2 safeObjectAtIndex:0]];
+                    }
+                }
+            }
+        }
+    } @catch (NSException *exception) {
+        
+    }
+    return result;
 }
 
 - (NSString *) removeAccentsText;
@@ -258,5 +290,88 @@
 {
 //    return [self stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]; // deprecated
     return [self stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLHostAllowedCharacterSet]];
+}
+
+- (void) openWebsite;
+{
+    if (self.length == 0) return;
+    NSString *url = self;
+    if (![url hasPrefix:@"http://"] && ![url hasPrefix:@"https://"]) {
+        url = [NSString stringWithFormat:@"http://%@", url];
+    }
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url] options:@{} completionHandler:^(BOOL success) {
+        DLog(@"success: %@", success ? @"YES" : @"NO");
+    }];
+    
+}
+
+- (UIImage *) decodeBase64ToImage;
+{
+    NSData *data = [[NSData alloc] initWithBase64EncodedString:self options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    if (data) return [UIImage imageWithData:data];
+    return nil;
+}
+
+- (NSMutableAttributedString *) stylingAttributedString:(NSString *)text color:(UIColor *)color font:(UIFont *)font;
+{
+    NSMutableAttributedString *attContent = [[NSMutableAttributedString alloc] initWithString:self];
+    @try {
+        NSDictionary *dictText = @{
+            NSFontAttributeName : font,
+            NSForegroundColorAttributeName : color //UITextAttributeTextColor
+        };
+        
+        if ([self rangeOfString:text].location != NSNotFound && text.length > 0) {
+            [attContent setAttributes:dictText range:[self rangeOfString:text]];
+        }
+        return attContent;
+    } @catch (NSException *exception) {}
+    
+    return [[NSMutableAttributedString alloc] initWithString:self];
+}
+
+- (NSMutableAttributedString *) stylingAttributedString:(NSString *)text
+                                                 color0:(UIColor *)color0
+                                                  font0:(UIFont *)font0
+                                                  color:(UIColor *)color
+                                                   font:(UIFont *)font;
+{
+    NSMutableAttributedString *attContent = [[NSMutableAttributedString alloc] initWithString:self];
+    @try {
+        NSDictionary *dictText0 = @{
+            NSFontAttributeName : font0,
+            NSForegroundColorAttributeName : color0 //UITextAttributeTextColor
+        };
+        [attContent setAttributes:dictText0 range:NSMakeRange(0, self.length-1)];
+        
+        NSDictionary *dictText = @{
+            NSFontAttributeName : font,
+            NSForegroundColorAttributeName : color //UITextAttributeTextColor
+        };
+        
+        if ([self rangeOfString:text].location != NSNotFound && text.length > 0) {
+            [attContent setAttributes:dictText range:[self rangeOfString:text]];
+        }
+        return attContent;
+    } @catch (NSException *exception) {}
+    
+    return [[NSMutableAttributedString alloc] initWithString:self];
+}
+
++ (NSString *) randomStringWithLength:(int) len;
+{
+    NSString *letters = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    return [self randomStringWithLength:letters len:len];
+}
+
++ (NSString *) randomStringWithLength:(NSString *)letters len:(int) len;
+{
+    NSMutableString *randomString = [NSMutableString stringWithCapacity: len];
+    
+    for (int i=0; i<len; i++) {
+        [randomString appendFormat:@"%C", [letters characterAtIndex:arc4random() % [letters length]]];
+    }
+    
+    return randomString;
 }
 @end
