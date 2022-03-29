@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author             = { "Dung Nguyen" => "nmdung9x@gmail.vn" }
   spec.ios.deployment_target = "10.0"
-  spec.source       = { :git => "https://github.com/nmdung9x/MyLibSupport.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "http://github.com/nmdung9x/MyLibSupport.git", :tag => "#{spec.version}" }
   spec.source_files = 'MyLibSupport/**/*'
 
 end
